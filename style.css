@@ -11,3 +11,23 @@ Tags: snupy
 
 snupy's Wordpress Theme Example
 */
+
+h1 {
+    color : black;
+}
+
+h2 {
+    color : red;
+}
+
+h3 {
+    color : yellow;
+}
+
+h4 {
+    color : green;
+}
+
+h5 {
+    color : blue;
+}
