@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d94c9a1d-f7c4-41da-8b30-6d2b31209584" name="pi">
+        <fileTransfer rootFolder="/var/www/html/" accessType="SFTP" host="snupy.iptime.org" port="22222" sshConfigId="fb3b0e06-a985-426e-8acd-9a9cde06ec7c" sshConfig="pi@snupy.iptime.org:22222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
