@@ -1,8 +1,24 @@
 <?php get_header(); ?>
+<div class="snupy_top">
+<h3><?php bloginfo('title');?></h3>
+<h5><?php bloginfo('description');?></h5>
+</div>
+
+<?php
+
+if(have_posts()) {
+    while(have_posts()) :the_post();
+        ?>
+        <h5>
+        <?php
+        _e("Category:","snupy");
+        the_category("&gt", 'multiple');
+        ?></h5>
+        <h3><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <?php the_content();
+    endwhile;
+    //포스트가 있으면 메인화면에 뿌려줌    
+}
+?>
 
 
-<h1>Making Wordpress Theme1</h1>
-<h2>Making Wordpress Theme2</h1>
-<h3>Making Wordpress Theme3</h1>
-<h4>Making Wordpress Theme4</h1>
-<h5>Making Wordpress Theme5</h1>

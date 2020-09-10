@@ -21,13 +21,21 @@ h2 {
 }
 
 h3 {
-    color : yellow;
-}
-
-h4 {
     color : green;
 }
 
+h4 {
+    color : orange;
+}
+
 h5 {
-    color : blue;
+    color : #333333;
+}
+
+.snupy_top {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #eeeeee;
+    border-bottom: 1px solid #ccc;
 }
