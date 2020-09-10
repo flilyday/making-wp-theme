@@ -31,6 +31,11 @@ h4 {
 h5 {
     color : #333333;
 }
+/*body, html {*/
+/*    margin:0;*/
+/*    margin-top: 0;*/
+/*    padding: 0;*/
+/*}*/
 
 .snupy_top {
     background-color: #ffffff;
@@ -39,3 +44,43 @@ h5 {
     border: 1px solid #eeeeee;
     border-bottom: 1px solid #ccc;
 }
+
+.snupy_bottom {
+    background-color: #333333;
+    width: 100%;
+    color: #eeeeee;
+    text-align: center;
+    padding: 1px;
+    border: 1px solid #eeeeee;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #ccc;
+    height: 150px;
+}
+
+.container {
+    display : table;
+    height: 100%;
+    width: 100%;
+}
+
+
+.sidebar {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+
+.main-content {
+    /*display: block;*/
+    float: left;
+    width: 69%;
+    border : 1px solid black;
+}
+
+.side-bar {
+    /*display: block;*/
+    float: right;
+    width: 30.5%;
+    border : 1px solid black;
+
+}
+

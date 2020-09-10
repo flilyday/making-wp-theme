@@ -13,3 +13,8 @@
 	<![endif]-->
     <?php wp_head(); ?>
 </head>
+<body>
+    <div class="snupy_top">
+        <h3><?php bloginfo('title');?></h3>
+        <h5><?php bloginfo('description');?></h5>
+    </div>
