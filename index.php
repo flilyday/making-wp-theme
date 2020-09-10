@@ -14,10 +14,15 @@ if(have_posts()) {
         _e("Category:","snupy");
         the_category("&gt", 'multiple');
         ?></h5>
-        <h3><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <h3><a href="<?php echo the_permalink(); ?>">
+            <?php the_title(); ?>
+            <br>
+            <br>
+            <?php the_post_thumbnail('small-thumbnail'); ?>
+        </a></h3>
         <?php the_content();
     endwhile;
-    //포스트가 있으면 메인화면에 뿌려줌    
+    //포스트가 있으면 메인화면에 뿌려줌
 }
 ?>
 
