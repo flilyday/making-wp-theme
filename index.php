@@ -18,7 +18,9 @@
                                 <br>
                                 <?php the_post_thumbnail('small-thumbnail'); ?>
                             </a></h3>
-                        <?php the_content();
+                        <?php echo get_the_excerpt();?>
+                        <a href="<?php the_permalink(); ?>">View Page</a>
+                        <hr> <?php
                     endwhile;
                     //포스트가 있으면 메인화면에 뿌려줌
                 }

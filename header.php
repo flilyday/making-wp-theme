@@ -15,6 +15,6 @@
 </head>
 <body>
     <div class="snupy_top">
-        <h3><?php bloginfo('title');?></h3>
-        <h5><?php bloginfo('description');?></h5>
+        <a href="<?php echo esc_url(home_url('/'));?>"><h1><?php bloginfo('title');?></h1></a>
+        <a href="http://snupy.iptime.org"><h5><?php bloginfo('description');?></h5></a>
     </div>
