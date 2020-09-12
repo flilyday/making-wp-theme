@@ -25,3 +25,25 @@ add_action('after_setup_theme', function(){
 });
 //테마에서 메뉴 항목 지원
 
+
+function snupy_widget_init() {
+	register_sidebar(array(
+		'name'=> __('Bottom Sidebar A', 'snupy'),
+		'id'=> __('bottom-sidebar-a'),
+		'description'=>__('Bottom Sidebar A', 'snupy')
+	));
+	register_sidebar(array(
+		'name'=> __('Bottom Sidebar B', 'snupy'),
+		'id'=> __('bottom-sidebar-b'),
+		'description'=>__('Bottom Sidebar B', 'snupy')
+	));
+	register_sidebar(array(
+		'name'=> __('Bottom Sidebar C', 'snupy'),
+		'id'=> __('bottom-sidebar-c'),
+		'description'=>__('Bottom Sidebar C', 'snupy')
+	));
+}
+
+
+add_action('widgets_init', 'snupy_widget_init');
+//푸터에 위젯을 띄울 수 있도록 함수 등록
