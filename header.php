@@ -18,3 +18,39 @@
         <a href="<?php echo esc_url(home_url('/'));?>"><h1><?php bloginfo('title');?></h1></a>
         <a href="http://snupy.iptime.org"><h5><?php bloginfo('description');?></h5></a>
     </div>
+
+<!--    수동으로 메뉴 만들기-->
+<!--    <nav>-->
+<!--        <ul>-->
+<!--            <li><a href="#">Menu A</a>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">Submenu A1</a></li>-->
+<!--                    <li><a href="#">Submenu A2</a></li>-->
+<!--                    <li><a href="#">Submenu A3</a></li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!---->
+<!--            <li><a href="#">Menu B</a>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">Submenu B1</a></li>-->
+<!--                    <li><a href="#">Submenu B2</a></li>-->
+<!--                    <li><a href="#">Submenu B3</a></li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li><a href="#">Menu C</a></li>-->
+<!--            <li><a href="#">Menu D</a></li>-->
+<!--            <li><a href="#">Menu E</a>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">Submenu E1</a></li>-->
+<!--                    <li><a href="#">Submenu E2</a></li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+
+    <?php
+        wp_nav_menu(
+                array('menu' => 'Sub-menu', //보여줄 메뉴를 지정하고(메뉴 네임은 워드프레스에 미리 저장해둔 메뉴)
+                      'container' => 'nav') //어떤 모양에 띄울지를 선택한다(stylesheet에 지정해 둔 nav에 먹인 모양에 매핑이 된다)
+        );
+    ?>
